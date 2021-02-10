@@ -1,4 +1,4 @@
-FROM tomyun/cropbox:v0.2.12
+FROM tomyun/cropbox:v0.2.13
 
 COPY --chown=${USER} . ${HOME}
 
