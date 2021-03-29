@@ -7,6 +7,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: easimon/maximize-build-space@master
+        with:
+          overprovision-lvm: 'true'
+          remove-dotnet: 'true'
+          remove-android: 'true'
       - uses: actions/checkout@v2
       - uses: jupyterhub/repo2docker-action@master
         with:
