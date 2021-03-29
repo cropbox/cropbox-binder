@@ -17,4 +17,5 @@ jobs:
         with:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          IMAGE_NAME: "cropbox/cropbox-binder"
           MYBINDERORG_TAG: ${{ github.event.ref }}
