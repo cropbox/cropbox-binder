@@ -1,4 +1,4 @@
-FROM cropbox/cropbox:v0.3.45
+FROM cropbox/cropbox:v0.3.46
 
 COPY --chown=${USER} . ${HOME}
 
